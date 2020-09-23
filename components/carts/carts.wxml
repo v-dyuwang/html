@@ -1,0 +1,6 @@
+<!--components/cart/cart.wxml-->
+<view class="index_carts">
+  <navigator wx:for="{{cartList}}" wx:key="name">
+    <image src="{{item.image_src}}" mode="widthFix"></image>
+  </navigator>
+</view>

@@ -1,0 +1,6 @@
+.address_box .address_btn {
+  padding: 20rpx;
+}
+.address_box .address_btn button {
+  width: 60%;
+}

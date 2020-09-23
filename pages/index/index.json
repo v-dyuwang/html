@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "Searchinput": "../../components/Searchinput/Searchinput",
+    "swiper": "../../components/swiper/swiper",
+    "carts": "../../components/carts/carts"
+  },
+  "navigationBarTitleText": "超市首页"
+}

@@ -1,0 +1,11 @@
+.index_carts {
+  display: flex;
+  margin-top: 20rpx;
+}
+.index_carts navigator {
+  flex: 1;
+  padding: 20rpx;
+}
+.index_carts navigator image {
+  width: 100%;
+}

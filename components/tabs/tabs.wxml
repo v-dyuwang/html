@@ -1,0 +1,13 @@
+<view class="table_nav">
+  <view class="{{item.flag ? 'active' : ''}}"
+  wx:for="{{tableList}}"
+  wx:key="item.id"
+  data-index="{{index}}"
+  bindtap="handleSel">
+  {{item.name}}
+  </view>
+</view>
+<view>
+  <slot></slot>
+</view>
+

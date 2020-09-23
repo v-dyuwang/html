@@ -1,0 +1,5 @@
+<view class="address_box">
+    <view class="address_btn">
+        <button type="primary" plain bindtap="handlechooseAddress">获取地址</button>
+    </view>
+</view>

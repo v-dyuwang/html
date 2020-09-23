@@ -1,0 +1,15 @@
+.table_nav {
+  display: flex;
+}
+.table_nav view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+  height: 80rpx;
+}
+.table_nav .active {
+  color: var(--themeColor);
+  border-bottom: 5rpx solid currentColor;
+}
