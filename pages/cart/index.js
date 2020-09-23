@@ -1,23 +1,19 @@
 import {getSetting, chooseAddress, openSetting } from '../../utils/address'
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
-  },
-  handlechooseAddress () {
-    console.log(1111)
-    const res = await getSetting()
-    const scopeAddress = res.authSetting['scope.address']
-    if(scopeAddress === true || scopeAddress === undefined) {
+  async handlechooseAddress () {
+    try {
+      const res = await getSetting()
+      const scopeAddress = res.authSetting['scope.address']
+      if(scopeAddress === false) {
+        await openSetting()
+      }
       const res1 = await chooseAddress()
+      // 把res1存到本地存储中
+      wx.setStorageSync('address', res1);
       console.log(res1)
-    } else {
-      await openSetting()
-      const res2 = await chooseAddress()
-      console.log(res2)
+    } catch (error) {
+      console.log(error)
     }
   }
+  
 })
